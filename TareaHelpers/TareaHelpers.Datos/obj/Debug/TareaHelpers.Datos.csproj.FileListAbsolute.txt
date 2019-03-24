@@ -1,0 +1,6 @@
+C:\Users\abel026\source\repos\TareaHelpers\TareaHelpers.Datos\bin\Debug\TareaHelpers.Datos.dll
+C:\Users\abel026\source\repos\TareaHelpers\TareaHelpers.Datos\bin\Debug\TareaHelpers.Datos.pdb
+C:\Users\abel026\source\repos\TareaHelpers\TareaHelpers.Datos\obj\Debug\TareaHelpers.Datos.csprojAssemblyReference.cache
+C:\Users\abel026\source\repos\TareaHelpers\TareaHelpers.Datos\obj\Debug\TareaHelpers.Datos.csproj.CoreCompileInputs.cache
+C:\Users\abel026\source\repos\TareaHelpers\TareaHelpers.Datos\obj\Debug\TareaHelpers.Datos.dll
+C:\Users\abel026\source\repos\TareaHelpers\TareaHelpers.Datos\obj\Debug\TareaHelpers.Datos.pdb

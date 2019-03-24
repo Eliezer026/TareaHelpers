@@ -1,0 +1,67 @@
+﻿@model TareaHelpers.Datos.Models.BindingModels.RegistroUsuariosBindingModel
+
+
+@{
+    Layout = null;
+    ViewBag.Title = "Resultado";
+
+
+}
+
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="Width=device-width" />
+    <title>Registro</title>
+</head>
+<body>
+
+    <h1>
+        Su Registro se hizo correctamente
+    </h1>
+
+    <div class="form-row">
+        <div class="col-md-12">
+            <table class="col-md-10">
+                <tr>
+                    <td>
+                        <label>Nombre: @ViewBag.Nombre </label>
+                        <br />
+                        <label>Apellido: @ViewBag.Apellido </label>
+                        <br />
+                        <label>Cedula: @ViewBag.Cedula </label>
+                        <br />
+                        <label>Sexo: @ViewBag.Sexo </label>
+                        <br />
+                        <label>Ocupacion: @ViewBag.Ocupacion </label>
+                        <br />
+                        <label>Hobby: @ViewBag.CheckBox</label>
+                        <br />
+                        <label>Edad: @ViewBag.Edad</label>
+                        <br />
+                        <label>Correo: @ViewBag.Correo</label>
+                        <br />
+                        <label>Telefono: @ViewBag.Telefono</label>
+                        <br />
+
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+   
+</body>
+
+
+</html>
+

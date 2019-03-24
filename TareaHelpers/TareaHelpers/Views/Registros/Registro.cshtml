@@ -1,0 +1,159 @@
+﻿@using TareaHelpers.Datos.Models.BindingModels
+
+
+@model TareaHelpers.Datos.Models.BindingModels.RegistroUsuariosBindingModel
+
+@{
+    ViewBag.Title = "Registro";
+}
+
+<h2>Registro</h2>
+
+
+
+
+
+<form action="/Registros/Registro" method="post">
+
+    <div class="form-row">
+        <div class="col-md-12">
+            @Html.LabelFor(m => m.Cedula)
+
+            @Html.TextBoxFor(m => m.Cedula, new { @class = "form-control" })
+
+
+
+            @Html.ValidationMessageFor(m => m.Cedula, "", new { @class = "text-danger" })
+
+        </div>
+    </div>
+
+
+    <div class="form-row">
+        <div class="col-md-12">
+            @Html.LabelFor(m => m.Nombre)
+            @Html.EditorFor(m => m.Nombre, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.Nombre, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <div class="form-row">
+
+        <div class="col-md-12">
+
+            @Html.LabelFor(m => m.Apellido)
+            @Html.EditorFor(m => m.Apellido, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.Apellido, "", new { @class = "text-danger" })
+        </div>
+
+    </div>
+
+
+    <div class="form-row">
+        <div class="col-md-12">
+            @Html.LabelFor(m => m.Edad)
+            @Html.EditorFor(m => m.Edad, "", new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.Edad, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-12">
+            @Html.LabelFor(m => m.Telefono)
+            @Html.EditorFor(m => m.Telefono, "", new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.Telefono, "", new { @class = "text-damger" })
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col-md-12">
+            @Html.LabelFor(m => m.Correo)
+            @Html.EditorFor(m => m.Correo, "", new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(m => m.Correo, "", new { @class = "text-damger" })
+        </div>
+    </div>
+
+
+    <div class="form-row">
+
+        <div class="col-md-12">
+
+            @Html.LabelFor(m => m.Ocupacion)
+
+            <h6>Casado</h6>
+            @Html.RadioButtonFor(m => m.Ocupacion, "Casado")
+
+            <h6>Soltero</h6>
+            @Html.RadioButtonFor(m => m.Ocupacion, "Soltero")
+
+            <h6>Viudo</h6>
+            @Html.RadioButtonFor(m => m.Ocupacion, "Viudo")
+
+            <h6>Union Libre</h6>
+            @Html.RadioButtonFor(m => m.Ocupacion, "Union Libre")
+            @Html.ValidationMessageFor(m => m.Ocupacion, "", new { @class = "text-danger" })
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="form-row">
+
+        <div class="col-md-12">
+
+            @Html.LabelFor(m => m.Sexo)
+            @Html.DropDownListFor(m => m.Sexo,
+                    new SelectList(Enum.GetValues(typeof(Gender))),
+                    "Select Gender")
+
+            @Html.ValidationMessageFor(m => m.Sexo, "", new { @class = "text-danger" })
+        </div>
+
+    </div>
+
+
+    <div class="form-row">
+
+        <div class="col-md-12">
+
+            @Html.LabelFor(m => m.CheckBox)
+
+            @Html.CheckBox("correr", false)
+            Correr
+            @Html.CheckBox("bailar", false)
+            Bailar
+            @Html.CheckBox("cantar", false)
+            Cantar
+            @Html.CheckBox("pintar", false)
+            Pintar
+            @Html.ValidationMessageFor(m => m.CheckBox, "", new { @class = "text-danger" })
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="form-row">
+        <div class="col-md-12">
+
+            <input type="submit" value="Enviar" class="btn btn-primary" />
+
+            @Html.ActionLink("Atras", "Registro", "Registros", null, new { @class = "btn btn-primary" })
+
+        </div>
+    </div>
+
+
+
+
+
+</form>
